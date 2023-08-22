@@ -1,0 +1,13 @@
+#lightbg {
+    background-color: lightgrey;
+}
+
+#lightwarning {
+    background-color: rgb(247, 195, 203);
+    font-weight: 400;
+    color: rgb(161, 24, 24);
+}
+
+#cards {
+    height: 4rem;
+}

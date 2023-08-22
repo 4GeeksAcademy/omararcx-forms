@@ -5,88 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a3eca10935.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid border border-secondary">
-        <div class="row ">
-            <div class="col-6">
-                <form class="container border border-secondary">
-                    <div class="col-6 bg-secondary bg-gradient">
-                        <h2><strong>Payment form example </strong></h2>
+        <div class="row">
+            <div class="col-8">
+                <form class="container border border-secondary rounded">
+                    <div class="row border border-light rounded" id="lightbg">
+                        <h2>Payment form example</h2>
                     </div>
-                    <div class="col-6 bg-warning">
-                        <h2 class="text-danger">Some fields are missing</h2>
-                    </div>
-                    <div class="container-fluid d-flex justify-content-between border border-secondary">
-                        <div class="mb-3">
-                            <label for="card#" class="form-label">Card #</label>
-                            <input type="text" placeholder="XXXXXXXXXXXXX" class="form-control" id="card#">
+                    <div class="row container d-flex justify-content-center">
+                            <h5 class="col-11 p-2 m-2 rounded" id="lightwarning"> Some fields are missing</h5>
                         </div>
-                        <div class="mb-3">
-                            <label for="CVC" class="form-label">CVC #</label>
-                            <input type="text" placeholder="0000" class="form-control" id="CVC">
-                        </div>
-                        <div class="mb-3" >
-                            <label for="amount" class="form-label">Amount</label>
-                            <input type="text" class="form-control" id="amount" >
-                        </div>
-                    </div>
-                    <div class="container-fluid d-flex justify-content-between border border-secondary">
-                        <div class="mb-3 container-fluid">
-                            <label for="name" class="form-label">First Name</label>
-                            <input type="name" class="form-control" id="name">
-                        </div>
-                        <div class="mb-3 container-fluid">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="name" class="form-control" id="lastName">
-                        </div>
-                    </div>
-                    <div class="container-fluid d-flex justify-content-between border border-secondary">
-                        <div class="mb-3 container-fluid">
-                            <label for="city" class="form-label">City</label>
-                            <input type="Text" class="form-control" id="city">
-                        </div>
-                        <div class="mb-3">
-                            <label for="State" class="form-label">State</label>
-                            <input type="number" placeholder="Pick a state" class="form-control" id="State">
-                        </div>
-                        <div class="mb-3">
-                            <label for="postalCode" class="form-label">Postal Code</label>
-                            <input type="text" class="form-control" id="postalCode">
-                        </div>
-                    </div>
-                    <div class="container-fluid d-flex justify-content-between border border-secondary">
-                        <div class="container-fluid d-flex bg-secondary">
-                            <div class="input-group">
-                                <div class="input-group-text">
-                                <input class="form-check-input mt-0" name="cardType" type="radio" value="" aria-label="Radio button for following text input">
-                                </div>
-                                <p><i class="fa-brands fa-cc-mastercard"></i></p>
+                        <div class="row container-fluid d-flex justify-content-between">
+                            <div class="col-4 m-2 ">
+                                <label for="card#" class="form-label">Card #</label>
+                                <input type="text" placeholder="XXXXXXXXXXXXX" class="form-control" id="card#">
                             </div>
-                            <div class="input-group">
-                                <div class="input-group-text">
-                                <input class="form-check-input mt-0" name="cardType"  type="radio" value="" aria-label="Radio button for following text input">
-                                </div>
-                                <p><i class="fa-brands fa-cc-visa"></i></p>
+                            <div class="col-3 m-2">
+                                <label for="CVC" class="form-label">CVC #</label>
+                                <input type="text" placeholder="0000" class="form-control" id="CVC">
                             </div>
-                            <div class="input-group">
-                                <div class="input-group-text">
-                                <input class="form-check-input mt-0" name="cardType" type="radio" value="" aria-label="Radio button for following text input">
-                                </div>
-                                <p><i class="fa-brands fa-cc-diners-club"></i></p>
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-text">
-                                <input class="form-check-input mt-0" name="cardType" type="radio" value="" aria-label="Radio button for following text input">
-                                </div>
-                                <p class="fs-4"><i class="fa-brands fa-cc-amex"></i></p>
-                               
+                            <div class="col-3 m-2">
+                                <label for="amount" class="form-label">Amount</label>
+                                <span> <label for="amount"> $ </label><input type="text" placeholder="Amount" class="form-control" id="amount"> </span>
                             </div>
                         </div>
-
+                        <div class="row container-fluid d-flex justify-content-between mb-2">
+                            <div class="col-6 container-fluid">
+                                <label for="name" class="form-label">First Name</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="col-6 container-fluid">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="name" class="form-control" id="lastName">
+                            </div>
+                        </div>
+                        <div class="row container-fluid justify-content-between mb-3">
+                            <div class="col-6">
+                                <label for="city" class="form-label">City</label>
+                                <input type="Text" class="form-control" id="city">
+                            </div>
+                            <div class="col-3">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                    <option selected>Pick a State</option>
+                                    <option>Antioquia</option>
+                                    <option>Amazonas</option>
+                                    <option>Santander</option>
+                                    </select>
+                            </div>
+                            <div class="col-3">
+                                <label for="postalCode" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="postalCode">
+                            </div>
+                        </div>
+                        <div class="row justify-content-between align-items-start mx-2 mt-3">
+                            <div class="col-3  d-flex bg-secondary rounded" id="cards">
+                                <div class="input-group align-items-center">
+                                    <input type="radio" id="master" name="cardType" value="">
+                                    <label class="fs-1 m-1" for="master"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="input-group align-items-center">
+                                    <input type="radio" id="master" name="cardType" value="">
+                                    <label class="fs-1 m-1" for="master"><i class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="input-group align-items-center">
+                                    <input type="radio" id="master" name="cardType" value="">
+                                    <label class="fs-1 m-1" for="master"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                
+                                <div class="input-group align-items-center">
+                                    <input type="radio" id="master" name="cardType" value="">
+                                    <label class="fs-1 m-1" for="master"><i class="fa-brands fa-cc-amex"></i></label>
+                                </div>
+                            </div>    
+                            <div class="col-6">
+                                <label for="messages" class="form-label">Messages</label>
+                                <textarea class="form-control" id="messages" rows="3"></textarea>
+                                <p>Add any notes here</p>
+                            </div>
+                        </div>    
+                        
+                    <div class="row container-fluid d-flex justify-content-end border border-light" id="lightbg">
+                        <button type="submit" class="col-1 btn btn-secondary m-2">Cancel</button>
+                        <button type="submit" class="col-1 btn btn-primary m-2">Send</button>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div> 
         </div>
