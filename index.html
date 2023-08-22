@@ -9,46 +9,46 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid border border-secondary">
-        <div class="row">
-            <div class="col-8">
-                <form class="container border border-secondary rounded">
-                    <div class="row border border-light rounded" id="lightbg">
-                        <h2>Payment form example</h2>
-                    </div>
-                    <div class="row container d-flex justify-content-center">
+    <div class="container p-0">
+        <div class="row border border-secondary p-0">
+            <div class="col-12 p-0">
+                <div class="border border-light rounded p-2" id="lightbg">
+                    <h2>Payment form example</h2>
+                </div>
+                    <form class="rounded p-2">
+                        <div class="d-flex justify-content-center">
                             <h5 class="col-11 p-2 m-2 rounded" id="lightwarning"> Some fields are missing</h5>
                         </div>
-                        <div class="row container-fluid d-flex justify-content-between">
-                            <div class="col-4 m-2 ">
+                        <div class="d-flex justify-content-between">
+                            <div class="my-2">
                                 <label for="card#" class="form-label">Card #</label>
                                 <input type="text" placeholder="XXXXXXXXXXXXX" class="form-control" id="card#">
                             </div>
-                            <div class="col-3 m-2">
+                            <div class="my-2">
                                 <label for="CVC" class="form-label">CVC #</label>
                                 <input type="text" placeholder="0000" class="form-control" id="CVC">
                             </div>
-                            <div class="col-3 m-2">
+                            <div class="m-2">
                                 <label for="amount" class="form-label">Amount</label>
                                 <span> <label for="amount"> $ </label><input type="text" placeholder="Amount" class="form-control" id="amount"> </span>
                             </div>
                         </div>
-                        <div class="row container-fluid d-flex justify-content-between mb-2">
-                            <div class="col-6 container-fluid">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="w-50 pe-2">
                                 <label for="name" class="form-label">First Name</label>
                                 <input type="name" class="form-control" id="name">
                             </div>
-                            <div class="col-6 container-fluid">
+                            <div class="w-50 ps-2">
                                 <label for="lastName" class="form-label">Last Name</label>
                                 <input type="name" class="form-control" id="lastName">
                             </div>
                         </div>
-                        <div class="row container-fluid justify-content-between mb-3">
-                            <div class="col-6">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="w-50 pe-2">
                                 <label for="city" class="form-label">City</label>
                                 <input type="Text" class="form-control" id="city">
                             </div>
-                            <div class="col-3">
+                            <div class="w-25 px-2">
                                     <label for="inputState" class="form-label">State</label>
                                     <select id="inputState" class="form-select">
                                     <option selected>Pick a State</option>
@@ -57,7 +57,7 @@
                                     <option>Santander</option>
                                     </select>
                             </div>
-                            <div class="col-3">
+                            <div class="w-25 ps-2">
                                 <label for="postalCode" class="form-label">Postal Code</label>
                                 <input type="text" class="form-control" id="postalCode">
                             </div>
@@ -88,12 +88,11 @@
                                 <p>Add any notes here</p>
                             </div>
                         </div>    
-                        
-                    <div class="row container-fluid d-flex justify-content-end border border-light" id="lightbg">
-                        <button type="submit" class="col-1 btn btn-secondary m-2">Cancel</button>
-                        <button type="submit" class="col-1 btn btn-primary m-2">Send</button>
-                    </div>
                 </form>
+                <div class="d-flex justify-content-end border border-light py-2" id="lightbg">
+                    <button type="submit" class="col-1 btn btn-secondary m-2">Cancel</button>
+                    <button type="submit" class="col-1 btn btn-primary m-2">Send</button>
+                </div>
             </div> 
         </div>
     </div>
